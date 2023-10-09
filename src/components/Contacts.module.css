@@ -1,0 +1,117 @@
+/* Global styles for smaller screens */
+@media (max-width: 812px) { /* iPhone X portrait mode width */
+  body {
+    font-size: 16px;
+  }
+}
+
+.contacts {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  
+}
+
+.title {
+  font-size: 1.5rem; /* Adjusted for mobile */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+}
+
+.contactItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  padding: 0.8rem; /* Adjusted for mobile */
+  margin-bottom: 1rem;
+}
+
+.addButton,
+.deleteButton,
+.addContactButton,
+.cancelButton,
+.duplicateButton,
+.sortButton {
+  font-size: 0.9rem; /* Adjusted for mobile */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0.5rem; /* Consistency in margin */
+  border: none;
+}
+
+.addButton,
+.duplicateButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.addContactButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cancelButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.sortButton {
+  background-color: #4caf50;
+  color: white;
+  display: block;
+  margin: 1rem auto; /* Adjusted for mobile */
+  text-align: center;
+}
+
+.addButton:hover,
+.duplicateButton:hover {
+  background-color: #0056b3;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+.addContactButton:hover {
+  background-color: #388e3c;
+}
+
+.cancelButton:hover {
+  background-color: #d32f2f;
+}
+
+.sortButton:hover {
+  background-color: #45a049;
+}
+
+.inputFieldContainer,
+.addContactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contactNameInput,
+.addContactInput {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.9rem; /* Adjusted for mobile */
+  flex: 1;
+  margin-right: 0.5rem; /* Consistency in margin */
+}
